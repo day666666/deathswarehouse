@@ -1,0 +1,56 @@
+
+body {
+    background-image: url('images/htmlbgfinal.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+body {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center the image-container horizontally */
+    align-items: center; /* Center the image-container vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Set a background color */
+    display: flex;
+    flex-direction: column; /* Stack containers vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    display: flex; /* Use flexbox to arrange containers side by side */
+    align-items: flex-start; /* Align items at the top of the container */
+}
+
+.comic-container {
+    background-color: #fff; /* Set a background color for the comic container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for contrast */
+    padding: 20px; /* Add some padding for spacing */
+    flex: 1; /* Allow comic container to grow to fill available space */
+    position: relative; /* Enable positioning within the comic container */
+}
+
+.button-container {
+    background-color: #fff; /* Set a background color for the button container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for contrast */
+    padding: 20px; /* Add some padding for spacing */
+    flex: 1; /* Allow button container to grow to fill available space */
+    position: relative; /* Enable positioning within the button container */
+    z-index: 1; /* Ensure button container is visually above comic container */
+}
+.comic-container {
+    margin-top: 20px; /* Add space to the top of the comic container */
+    margin-bottom: 20px; /* Add space to the bottom of the comic container */
+}
+
+.button-container {
+    margin-top: 200px; /* Add space to the top of the button container */
+    margin-bottom: 100px; /* Add space to the bottom of the button container */
+}
