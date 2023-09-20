@@ -1,0 +1,27 @@
+/*background*/
+
+body {
+    background-image: url('../images/htmlbgfinal.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+/* comic and buttons */
+body {
+    justify-content: center;
+    align-items: center; 
+}
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+.comic-container {
+    padding: 0px;
+    position: relative; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+
+
