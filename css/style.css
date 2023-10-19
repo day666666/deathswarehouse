@@ -23,7 +23,7 @@ body {
     margin-bottom: 20px;
 }
 .button-container {
-    background-image: url('https://i.ibb.co/M1CHZYg/button-container-art.png');
+    background-image: url('../images/button_container_art.png');
     background-size: contain;
     background-position: center;
     text-align: center;
