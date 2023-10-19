@@ -23,7 +23,7 @@ body {
     margin-bottom: 20px;
 }
 .button-container {
-    background-image: url('./images/button_container_art.png');
+    background-image: url('/images/button_container_art.png');
     background-size: contain;
     background-position: center;
     text-align: center;
@@ -41,7 +41,7 @@ body {
     margin: 10px;
     text-decoration: none;
     padding: 10px 20px;
-    background-image: url('https://i.ibb.co/q5DybDz/buttonbluebig.png');
+    background-image: url('/images/buttonblue.png');
     background-size: contain;
     color: #000000;
     border-radius: 0px;
