@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/gallery-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="website-title">
+        <img src="images/deathswarehouse.png" alt="" width="400" />
+    </div>
+    
+    <div class="button-container">
+        <a href="index.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Comic</a>
+        <a href="about.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">About</a>
+        <a href="contact.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Contact</a>
+        <a href="gallery.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Gallery</a>
+  </div>
+
+<div class="container">
+  <img src="images/dwh1.png" width="500px"> 
+  <h6 style="color: rgb(255, 255, 255);">This is the first ever drawing of these characters.</h6>
+  <img src="images/20231129_130644 (1).jpg" width="500px">
+  <img src="images/Screenshot_20231129_151903_Gallery.jpg" width="500px">
+  <h6 style="color: rgb(255, 255, 255);">The different renditions of Mori. I drew her quite a lot, I wasn't sure what style I wanted to go for.</h6>
+  <img src="images/mori.png" width="500px">
+  <h6 style="color: rgb(255, 255, 255);">Her final form.</h6>
+</div>
+<div>
+  <button id="playButton">Play: Ponder</button>
+  <audio id="backgroundMusic" loop>
+    <source src="music/coolmusic.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <script>
+    document.getElementById('playButton').addEventListener('click', function() {
+      var backgroundMusic = document.getElementById('backgroundMusic');
+  
+      // Check if the audio is paused or ended before playing
+      if (backgroundMusic.paused || backgroundMusic.ended) {
+        backgroundMusic.play();
+        this.innerHTML = 'Pause';
+      } else {
+        backgroundMusic.pause();
+        this.innerHTML = 'Play: Ponder';
+      }
+    });
+  </script>
+</div>
+
+</html>

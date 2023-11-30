@@ -5,36 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <audio id="backgroundMusic" loop>
-        <source src="your-music-file.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-      </audio>
-    
-      <script>
-        // Play background music when the page loads
-        window.addEventListener('load', function() {
-          var backgroundMusic = document.getElementById('backgroundMusic');
-          backgroundMusic.play();
-        });
-      </script>
+  
+       
+     
     </body>
-    
     
     <div id="website-title">
         <img src="images/deathswarehouse.png" alt="" width="400" />
     </div>
     
     <div class="button-container">
-        <a href="index.html">Comic</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="gallery.html">Gallery</a>
+      <a href="index.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Comic</a>
+      <a href="about.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">About</a>
+      <a href="contact.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Contact</a>
+      <a href="gallery.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Gallery</a>
     </div>
-    
-        
-            
-        </div>
+    <script>
+      function playSound(soundFile) {
+        var audio = new Audio(soundFile);
+        audio.play();
+      }
+    </script>
     </body>
+    <div class="container">
+      <div class="my-form">
+        <form
+      action="https://formspree.io/f/mzblqeqq"
+      method="POST"
+      
+    >
+      <label>
+        Your Email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your Message:
+        <textarea name="message"></textarea>
+      </label>
+      
+      <button type="submit"class='send-button'>Send</button>
+    </form>       
+
+      <h4>You can also visit me on:</h4> 
+      <div class="instagram-link">
+      <img src="images/instagram_deathswarehouse.png" width="100px">
+        <a href="https://www.instagram.com/dayyy666666/">My Instagram</a> 
+        </div>
+
+        <div class="discord_link">
+        <img src="images/discordlogo_deathswarehouse.png" width="100px">
+        <a href="https://discord.gg/2hJxWjy2NS">Death's Warehouse Discord Server</a>
+        <div class="youtube_link">
+          <img src="images/youtubelogo_deathswarehouse.png" width="100px">
+          <a href="https://www.youtube.com/@daynawhitmarsh5974/videos">My Youtube</a>
+        </div>
+      
+        <body>
+          <button id="playButton">Play: Flourescent Lights</button>
+          <audio id="backgroundMusic" loop>
+            <source src="music/flourescentlights.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          
+          <script>
+            document.getElementById('playButton').addEventListener('click', function() {
+              var backgroundMusic = document.getElementById('backgroundMusic');
+          
+    
+              if (backgroundMusic.paused || backgroundMusic.ended) {
+                backgroundMusic.play();
+                this.innerHTML = 'Pause';
+              } else {
+                backgroundMusic.pause();
+                this.innerHTML = 'Play: Flourescent Lights';
+              }
+            });
+          </script>
+  </body>
     </html>
     
     

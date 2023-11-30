@@ -7,36 +7,45 @@
     <title>Death's Warehouse</title>
 </head>
 <body>
-    <audio id="backgroundMusic" loop>
-        <source src="your-music-file.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-      </audio>
-    
-      <script>
-        // Play background music when the page loads
-        window.addEventListener('load', function() {
-          var backgroundMusic = document.getElementById('backgroundMusic');
-          backgroundMusic.play();
-        });
-      </script>
     </body>
     
     
     <div id="website-title">
-        <img src="images/deathswarehouse.png" alt="" width="400" />
-    </div>
+      <img src="images/deathswarehouse.png" alt="" width="400" />
+  </div>
+  
+  <div class="button-container">
+    <a href="index.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Comic</a>
+      <a href="about.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">About</a>
+      <a href="contact.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Contact</a>
+      <a href="gallery.html" class="button" onmouseover="playSound('music/buttonnoise.wav')">Gallery</a>
+</div>
     
-    <div class="button-container">
-        <a href="index.html">Comic</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="gallery.html">Gallery</a>
-    </div>
-    
-        <div id="coming-soon">
-            <img src="images/comingsoon.png"
+        <div class="page1"></div>
+            <img src="images/PAGE1SCALED.gif" 
             width="500px"/>
             
+        </div>
+        <button id="playButton">Play: Machine</button>
+        <audio id="backgroundMusic" loop>
+          <source src="music/ambieancefinish.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+        
+        <script>
+          document.getElementById('playButton').addEventListener('click', function() {
+            var backgroundMusic = document.getElementById('backgroundMusic');
+        
+            // Check if the audio is paused or ended before playing
+            if (backgroundMusic.paused || backgroundMusic.ended) {
+              backgroundMusic.play();
+              this.innerHTML = 'Pause';
+            } else {
+              backgroundMusic.pause();
+              this.innerHTML = 'Play: Machine';
+            }
+          });
+        </script>
         </div>
     </body>
     </html>
