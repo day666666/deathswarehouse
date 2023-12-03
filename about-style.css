@@ -83,8 +83,8 @@ body {
         font-family: 'dogica';
       }
       .container {
-        width: 9in;
-        height: 20in;
+        width: 20in;
+        height: 40in;
         background-color: rgb(0, 0, 0);
         margin: 10px;
         margin-top: 200px;
